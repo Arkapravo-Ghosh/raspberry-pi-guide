@@ -1,0 +1,10 @@
+# Editor directories and files
+.vscode/
+
+# Packages
+node_modules/
+
+# Misc
+.DS_Store
+.env.development
+.env.production

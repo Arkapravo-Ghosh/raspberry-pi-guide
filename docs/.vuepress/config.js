@@ -1,4 +1,6 @@
-import { defineUserConfig, defaultTheme } from "vuepress";
+import { defineUserConfig } from "vuepress";
+import { defaultTheme } from "@vuepress/theme-default";
+import { viteBundler } from "@vuepress/bundler-vite";
 
 export default defineUserConfig({
   lang: "en-US",
@@ -8,7 +10,9 @@ export default defineUserConfig({
     repo: "https://github.com/Arkapravo-Ghosh/raspberry-pi-guide",
     logo: "/logo.jpg",
     editLink: false,
+    sidebar: false,
   }),
+  bundler: viteBundler(),
   port: 3000,
   head: [
     ["link", { rel: "icon", href: "/logo.jpg" }],
